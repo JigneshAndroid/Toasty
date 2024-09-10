@@ -1,19 +1,8 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
-    `maven-publish`
 }
 
-publishing {
-    publications {
-        create<MavenPublication>("maven") {
-            groupId = "com.github.JigneshAndroid"
-            artifactId = "Toasty"
-            version = "1.0.0"
-
-        }
-    }
-}
 
 android {
     namespace = "com.example.toasty"
